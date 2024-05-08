@@ -8,7 +8,7 @@ services:
       context: ./exchange-back-end/
       dockerfile: ./src/main/docker/Dockerfile.jvm
     ports:
-      - 8090:8090
+      - 7090:8090
     networks:
       - fix-trading-simulator-net
     depends_on:
@@ -43,7 +43,7 @@ services:
       context: ./broker-back-end
       dockerfile: ./src/main/docker/Dockerfile.jvm
     ports:
-      - 8080:8080
+      - 7080:8080
     networks:
       - fix-trading-simulator-net
     depends_on:
@@ -94,7 +94,7 @@ services:
       context: ./exchange-front-end/
       dockerfile: ./Dockerfile
     ports:
-      - 90:80
+      - 7091:80
     networks:
       - fix-trading-simulator-net
     depends_on:      
@@ -107,7 +107,7 @@ services:
       context: ./broker-front-end/
       dockerfile: ./Dockerfile
     ports:
-      - 80:80
+      - 7081:80
     networks:
       - fix-trading-simulator-net
     depends_on:      
