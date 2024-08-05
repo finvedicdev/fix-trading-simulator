@@ -10,7 +10,7 @@ import { Negotiation } from './negotiation.model';
 })
 export class NegotiationService {
 
-  baseUrl = 'http://localhost:8090/negotiation';
+  baseUrl = 'http://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8090/negotiation';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }
