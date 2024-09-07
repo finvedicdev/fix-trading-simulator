@@ -12,7 +12,7 @@ import { EMPTY, Observable } from 'rxjs';
 })
 export class LogService {
 
-  baseUrl = 'http://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8090/logs';
+  baseUrl = 'http://stockexchange-be.finvedic.in/logs';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }

@@ -10,7 +10,7 @@ import { Order } from './order.model';
 })
 export class OrderService {
 
-  baseUrl = 'http://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8090/orders';
+  baseUrl = 'http://stockexchange-be.finvedic.in/orders';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }

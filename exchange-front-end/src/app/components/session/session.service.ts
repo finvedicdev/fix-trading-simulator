@@ -11,7 +11,7 @@ import { EMPTY, Observable } from 'rxjs';
 })
 export class SessionService {
 
-  baseUrl = 'http://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8090/session';
+  baseUrl = 'http://stockexchange-be.finvedic.in/session';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }

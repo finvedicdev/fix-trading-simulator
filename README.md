@@ -76,7 +76,7 @@ After start, access project at:
 - Exchange Front end
   - http://localhost:90/
 - Exchange Back end swagger: 
-  - http://localhost:8090/q/swagger-ui/
+  - http://stockexchange-be.finvedic.in/q/swagger-ui/
 - PostgreSQL:
   - jdbc:postgresql://localhost:5432/postgres
   - user: postgres
@@ -134,7 +134,7 @@ docker run -d --name postgres-qfj -p 5432:5432 -e POSTGRES_USER=postgres -e POST
 $ ./mvnw compile quarkus:dev -Ddebug=5006
 ```
 
-Access http://localhost:8090/q/swagger-ui/
+Access http://stockexchange-be.finvedic.in/q/swagger-ui/
 
 ### Enter inside the `broker-back-end` folder and type:
 ```
