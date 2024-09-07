@@ -10,7 +10,7 @@ import { EMPTY, Observable } from 'rxjs';
 })
 export class OrderService {
 
-  baseUrl = 'http://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8080/orders';
+  baseUrl = 'http://stockbroker-be.finvedic.in/orders';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }

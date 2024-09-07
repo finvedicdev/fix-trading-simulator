@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class OrderWebSocketService {
 
-    myWebSocket: WebSocketSubject<Order> = webSocket('ws://fnvediclabs2116318020001.eastus.cloudapp.azure.com:8080/socket/order');
+    myWebSocket: WebSocketSubject<Order> = webSocket('ws://stockbroker-be.finvedic.in/socket/order');
 
     constructor(private snackBar: MatSnackBar) { }
 
