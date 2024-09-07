@@ -5,7 +5,7 @@ services:
     container_name: exchange-back-end
     image: felipewind/exchange-back-end:1.0
     ports:
-      - 8090:8090
+      - 8990:8990
     networks:
       - fix-trading-simulator-net
     depends_on:
@@ -37,7 +37,7 @@ services:
     container_name: broker-back-end
     image: felipewind/broker-back-end:1.0
     ports:
-      - 8080:8080
+      - 8880:8880
     networks:
       - fix-trading-simulator-net
     depends_on:
@@ -85,7 +85,7 @@ services:
     container_name: exchange-front-end
     image: felipewind/exchange-front-end:1.0
     ports:
-      - 90:80
+      - 9099:80
     networks:
       - fix-trading-simulator-net
     depends_on:      
@@ -95,7 +95,7 @@ services:
     container_name: broker-front-end
     image: felipewind/broker-front-end:1.0
     ports:
-      - 80:80
+      - 8099:80
     networks:
       - fix-trading-simulator-net
     depends_on:      
