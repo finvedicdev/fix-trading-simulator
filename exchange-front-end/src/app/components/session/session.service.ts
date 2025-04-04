@@ -11,7 +11,7 @@ import { EMPTY, Observable } from 'rxjs';
 })
 export class SessionService {
 
-  baseUrl = 'http://stockexchange-be.finvedic.in/session';
+  baseUrl = 'https://exchange-be.finvedic.com/session';
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }
